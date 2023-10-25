@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width-device-width,initial-scale=1.0" />
+        <title>TicTacToe</title>
+        <link href="tac.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>TicTacToe</h1>
+        <div id="container">
+            <div data-index="1" class="X-display item1 bordertop borderleft borderbottom borderright"></div>
+            <div data-index="2" class="O-display item1 bordertop borderleft borderbottom borderright"></div>
+            <div data-index="3" class="item1 bordertop borderright borderleft borderbottom"></div>
+            <div data-index="4" class="item1 borderleft borderbottom borderright"></div>
+            <div data-index="5" class="item1 borderbottom borderright borderleft"></div>
+            <div data-index="6" class="item1 borderright borderbottom borderleft"></div>
+            <div data-index="7" class="item1 borderleft borderbottom borderright"></div>
+            <div data-index="8" class="item1 borderbottom borderright borderleft"></div>
+            <div data-index="9" class="item1 borderright borderbottom borderleft"></div>
+            <div id="markline" class="markline"></div>
+        </div>
+        <div id="game-over" class="hide">
+            <h2 id="game-over-text">Winner is X!!!</h2>
+            <button id="btyn">Stay Play</button>
+        </div>
+        <script src="tictoe1.js"></script>
+    </body>
+</html>

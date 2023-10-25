@@ -1,0 +1,130 @@
+body {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background: black url("tictactoeimg/tictacimg3.jpg");
+    background-position:center;
+    opacity:0.9;
+}
+#container {
+    display:grid;
+    grid-template-columns:100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor:pointer;
+    position: relative;
+}
+h1 {
+    color:aqua;
+}
+#container >div {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:10%;
+}
+.item1 {
+    color:yellow;
+    font-size:30px;
+}
+.bordertop {
+    border-top: 9px solid rgb(19, 131, 139);
+}
+.borderbottom {
+    border-bottom: 9px solid rgb(19, 131, 139);
+}
+.borderright {
+    border-right: 9px solid orangered;
+}
+.borderleft {
+    border-left: 9px solid orangered;
+}
+.markline {
+    background-color:green;
+    position:absolute;
+}
+.markline-row1 {
+    width:100%;
+    height:4px;
+    top:16%;
+    left:4%;
+}
+.markline-row2 {
+    width:100%;
+    height:4px;
+    top:47.5%;
+    left:4%;
+}
+.markline-row3 {
+    width:100%;
+    height:4px;
+    top:82.5%;
+    left:4%;
+}
+.markline-column1 {
+    width:3px;
+    height:100%;
+    left:15%;
+}
+.markline-column2 {
+    width:3px;
+    height:100%;
+    left:47%;
+}
+.markline-column2 {
+    width:3px;
+    height:100%;
+    left:83%;
+}
+.markline-diagonal1 {
+    width:100%;
+    height:4px;
+    left:6%;
+    top:55%;
+    transform:skewY(45deg);
+}
+.markline-diagonal2 {
+    width:100%;
+    height:4px;
+    left:6%;
+    top:43%;
+    transform:skewY(-45deg);
+}
+#game-over {
+    text-align: center;
+    border: 6px inset indigo;
+    border-radius: 15%;
+    padding:10px;
+    margin-top:60px;
+    height : 130px;
+    width : 250px;
+}
+h2 {
+    color:aqua;
+    font-size: 34px;
+    margin-top:0px;
+}
+#btyn {
+    background-image: conic-gradient(green 50%,white 20%, orange 50%);
+    background-color: transparent;
+    font: Italic bold 20px arial;
+    border:lightgoldenrodyellow 1px solid;
+    color:white;
+    width:120px;
+    height:40px;
+    border-radius:8%;
+    margin-top: 15px;
+}
+.hide {
+    display:none;
+}
+.visible {
+    display: block;
+}
+.X-display:hover::after {
+    content:"X";
+    opacity:0.5;
+}
+.O-display:hover::after {
+    content:"O";
+    opacity:0.5;
+}
